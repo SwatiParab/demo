@@ -1,0 +1,10 @@
+first create project repository
+then git init from git bash
+then git clone repo url
+git add .
+git commit -m ""
+git push origin master
+making new branch from master you have to 
+git checkout -b local
+then git pull origin master
+git push origin local
