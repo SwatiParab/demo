@@ -1,0 +1,50 @@
+Meta Tag
+=> The <meta> tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
+=> Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
+=> HTML5 introduced a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag for eg: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Implicit intent and Explicit intent
+==> Explicit intents specify the component to start by name (the fully-qualified class name). You'll typically use an explicit intent to start a component in your own app, because you know the class name of the activity or service you want to start. For example, you can start a new activity in response to a user action or start a service to download a file in the background.
+
+==> Implicit intents do not name a specific component, but instead declare a general action to perform, which allows a component from another app to handle it. For example, if you want to show the user a location on a map, you can use an implicit intent to request that another capable app show a specified location on a map.
+
+Difference btween HTML and HTML5
+==> HTML
+1) Doctype declaration in Html is too longer
+   <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+2) character encoding in Html is also longer 
+	 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+3) Audio and Video are not part of HTML4
+4) Vector Graphics is possible with the help of technologies such as VML, Silverlight, Flash etc
+5) It is almost impossible to get true GeoLocation of user browsing any website especially if it comes to mobile devices.
+6) Html5 use cookies.
+7) Not possible to draw shapes like circle, rectangle, triangle.
+8) Does not allow JavaScript to run in browser. JS runs in same thread as browser interface.
+9) Works with all old browsers
+
+==> HTML5
+1) DOCTYPE declaration in Html5 is very simple "<!DOCTYPE html>
+2) character encoding (charset) declaration is also very simple <meta charset="UTF-8">
+3) Audio and Videos are integral part of HTML5 e.g. <audio> and <video> tags.
+4) Vector graphics is integral part of HTML5 e.g. SVG and canvas
+5) JS GeoLocation API in HTML5 helps identify location of user browsing any website (provided user allows it)
+6) It provides local storage in place of cookies.
+7) Using Html5 you can draw shapes like circle, rectangle, triangle.
+8) Allows JavaScript to run in background. This is possible due to JS Web worker API in HTML5
+9) Supported by all new browser.
+
+Main elements in HTML5
+1) New semantic elements like <header>, <footer>, <article>, and <section>.
+2) New attributes of form elements like number, date, time, calendar, and range.
+3) New graphic elements: <svg> and <canvas>.
+4) New multimedia elements: <audio> and <video>.
+
+Why reset css use?
+=> A CSS Reset (or “Reset CSS”) is a short, often compressed (minified) set of CSS rules that resets the styling of all HTML elements to a consistent baseline.
+=> In case you didn’t know, every browser has its own default ‘user agent’ stylesheet, that it uses to make unstyled websites appear more legible. For example, most browsers by default make links blue and visited links purple, give tables a certain amount of border and padding, apply variable font-sizes to H1, H2, H3 etc. and a certain amount of padding to almost everything. Ever wondered why Submit buttons look different in every browser?
+=> Obviously this creates a certain amount of headaches for CSS authors, who can’t work out how to make their websites look the same in every browser. (NB: article coming soon about why this is a false notion!)
+=> Using a CSS Reset, CSS authors can force every browser to have all its styles reset to null, thus avoiding cross-browser differences as much as possible.
+
+Create oen tag
+=> for eg: document.createElement('foo');
+	 <foo>Lorem ipsum</foo>
